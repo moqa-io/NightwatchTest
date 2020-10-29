@@ -7,7 +7,7 @@ module.exports = {
         .useCss().setValue('#id_userLoginId', 'test@gmail.com')
         .setValue('#id_password' ,'1234')
         .useXpath().click('//button[text()="Sign In"]')
-        .useXpath().assert.visible('//div[@class="ui-message-contents"]')
+        .useCss().assert.visible('.ui-message-contents')
         .end();
 
     }
